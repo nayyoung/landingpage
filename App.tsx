@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import Hero from './components/Hero';
 import Work from './components/Work';
-import Currently from './components/Currently';
+import Labs from './components/Labs';
+import FAQ from './components/FAQ';
 import Connect from './components/Connect';
 import Footer from './components/Footer';
 
@@ -19,7 +20,8 @@ const App: React.FC = () => {
       <div className="mx-auto max-w-5xl px-6 md:px-12">
         <Hero />
         <Work />
-        <Currently />
+        <Labs />
+        <FAQ />
         <Connect />
         <Footer />
       </div>
