@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Link as LinkIcon } from 'lucide-react';
 
 interface Project {
   title: string;
@@ -60,8 +60,9 @@ const Work: React.FC = () => {
             className="group relative flex cursor-default flex-col justify-between border-t border-[#222] pt-6"
           >
             <div className="mb-8">
-              <h3 className="mb-3 text-3xl font-bold tracking-tight text-[#f5f5f5] transition-colors group-hover:text-[#e07a24]">
+              <h3 className="flex items-center gap-2 mb-3 text-3xl font-bold tracking-tight text-[#f5f5f5] transition-colors group-hover:text-[#e07a24]">
                 {project.title}
+                <LinkIcon className="h-5 w-5 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1" />
               </h3>
               <p className="max-w-sm text-lg text-[#ccc] transition-colors group-hover:text-white">
                 {project.description}

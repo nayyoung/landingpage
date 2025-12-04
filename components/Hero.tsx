@@ -45,15 +45,15 @@ const Hero: React.FC = () => {
           </p>
 
           {/* Conversion Layer: Hero Email Capture */}
-          <div className="max-w-md">
+          <div className="max-w-md pt-2">
             {submitted ? (
               <motion.div 
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
-                className="flex items-center gap-2 rounded border border-[#222] bg-[#111] px-4 py-3 text-[#e07a24]"
+                className="flex items-center gap-2 rounded border border-[#e07a24] bg-[#1a110d] px-4 py-3 text-[#e07a24]"
               >
                 <Check className="h-5 w-5" />
-                <span className="font-medium">You're on the list. Keep building.</span>
+                <span className="font-bold tracking-tight">Nice. You'll know.</span>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:flex-row">

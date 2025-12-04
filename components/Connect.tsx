@@ -54,7 +54,7 @@ const Connect: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   className="rounded border border-[#e07a24] bg-[#1a110d] p-8 text-center"
                 >
-                  <p className="text-xl font-medium text-[#e07a24]">You're in.</p>
+                  <p className="text-xl font-bold tracking-tight text-[#e07a24]">Nice. You'll know.</p>
                   <p className="mt-2 text-[#ccc]">Check your inbox for the welcome drop.</p>
                 </motion.div>
              ) : (
